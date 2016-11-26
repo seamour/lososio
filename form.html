@@ -1,0 +1,151 @@
+<!Doctype html>
+<html>
+   <head>
+   	<meta charset="utf-8">
+   	<title>My website name</title>
+   	<meta name="description" content="decription about my website">
+   	<link href="media/css/style.css" rel="stylesheet">
+   </head>
+ <body>
+ 	
+    <div class="mainblock">
+    	<header class="header">
+    		<img src="media/img/logo.png" class="logo">
+    		<h1 class="logotex">Instagram</h1>
+    	</header>
+ 	<div class="top">
+ 		<nav class="topmenu">
+ 			<a href="#">О компании</a>
+ 			<a href="#">Новости</a>
+ 			<a href="#">Вакансии</a>
+ 			<a href="#">Контакты</a>
+        </nav>
+ 	</div> <!----end of top class -->
+ 	<section class="real-block">
+ 		<nav class="left-menu">
+ 			<a href="#">Website development</a>
+ 			<a href="#">SEO</a>
+ 			<a href="#">Organization</a>
+ 		</nav>
+ 		<article class="text-block">
+        <h2>Forms</h2>
+        <form action="index.php" method="get" name="form">
+        <p>
+          <label for="name">Name</label>
+          <input type="text" name="name"/>
+        </p> 
+        <p>
+          <label for="bool">Dropdown</label> 
+          <input type="radio" name="bool" value=1/>
+          <input type="radio" name="bool" value=2/>
+        </p>
+        <p>
+          <label for="pass">Password</label> 
+          <input type="password" name="pass" value=Password/>
+        </p>
+        <p>
+        <label for="body">Text</label>
+        <br>  
+        <textarea id=1 name="body" rows=10 cols=30 oninput="validate(this)"></textarea>
+
+        </p>
+        <p contentEditable="">
+        GGG
+        </p>
+        <p>
+          <label for="dropdown">Dropdown</label>
+          <select name="dropdown">
+            <option value=1>One</option>
+            <option value=2>Two</option>
+          </select>
+        </p>
+        <p>
+          <label for="email"> Email</label>
+          <input type=email name="email" autocomplete="off" placeholder="Enter your email" multuple=true/>
+        </p>
+        <p>
+          <label for="search"> Search</label>
+          <input type="search" name="search" list="data"/>
+          <datalist id="data" name="data">
+            <option value="123-123" label="tel"/>
+            <option value="134-234" label="tel2"/>
+          </datalist>
+        </p>
+        <p>
+          <label for="url">URL</label>
+          <input type="url" name="url"/>
+        </p>
+        <p>
+          <label for="tel"> Phone</label>
+          <input type="tel" name="tel"/>
+        </p>
+        <p>
+          <label for="number">#</label>
+          <input type="number" name="number" min=0 max=100/>
+        </p>
+        <p>
+          <label for="range">Range</label>
+          <input type="range" name="range" min=0 max=10 step=2/>
+        </p>
+        <p>
+          <label for="range">Progress</label>
+          <progress name="progress" value=75 max=100>working
+          </progress>
+        </p>
+        <p>
+          <label for="meter">Meter</label>
+          <meter name="meter" min=0 low=40 max=10 optimum=70 value=20>Meter</meter>
+        </p>
+        <p>
+          <label for="date">Date</label>
+          <input type="date" name="date"/>
+        </p>             
+        <p>
+          <label for="loc">Date</label>
+          <input type="datetime-local" name="loc"/>
+        </p>
+        <p>
+          <label for="col">Color</label>
+          <input type="color" name="col"/>
+        </p>
+        <p>
+          <label for="regex">Regex</label>
+          <input type="text" name="regex" pattern=[]/>
+        </p>
+        <p>
+          <input type="submit" value="SEND"/>
+        </p>
+        <p>
+          <input type="submit" value="SAVE" formnovalidate />
+        </p>
+        <script>function validate(input){
+            if (input.value.length<10){
+              input.setCustomValidity("Too few symbols!");
+            }else {
+              input.setCustomValidity("");
+            }
+        }
+        </script>
+
+
+        </form>
+
+
+
+
+        
+
+
+
+
+        </form>
+ 		</article>
+ 	</section>
+<footer class="footer">
+	<a href="mailto:mikhalkevich@ya.ru">mikhalkevich@ya.ru</a>
+&copy;2016
+</footer>
+
+ 	</div><!----end of mainblock class -->
+ </body>  
+</html>
